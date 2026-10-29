@@ -3,16 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>[  tetrWeb  ]</title>
+        <title>[ tetrWeb ]</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-    <!-- TOP HEADER NAVIGATION BAR
         <header class="top-bar">
             <div class="nav-logo">
                 <a href="https://idiot250.github.io/tetrWeb" class="nav-logo-link">
-                   <span class="logo-title">tetrWeb !!</span>
+                   <span class="logo-title">tetrWeb</span>
                 </a>
             </div>
            <nav class="nav-links">
@@ -21,29 +20,49 @@
                 <a href="https://example.com" class="nav-link-item">nav3</a>
                 <a href="https://example.com" class="nav-link-item">nav4</a>
            </nav>
+
+	   	<button>
+		   <div id="header-profile-menu">
+			   <!--TODO: for v2, add pfp integration-->
+			<span class="username">Admin</span>
+		</button>
+
+		<div class="dropdown" id="profile-menu-dropdown" hidden>
+			<a href="https://example.com">Stats</a>
+			<a href="https://example.com">Prefs</a>
+			<button id="logout-btn">Logout</button>
+		</div> <!--profile menu dropdown-->
+	    </div> <!--nav-logo-->
         </header>
-    -->
 
 
         <!--
             v0.0.1 PoC
             2026 10 29
         -->
-
         <main class="game-container">
+
+		<!--left-->
             <section class="queue" id="hold-queue">
                 <div class="label" id="hold-label">HOLD</div>
-                <div id="hold-grid"></div>
+		<div class="grid" id="hold-grid"></div>
             </section>
-
-            <canvas id="active-gameboard" width="400" height="800">
-		<div id="level-label">000</div>
-            </canvas>
-
+		
+	    	<!--middle-->
+	    <div class="board-wrapper">
+          	  <canvas id="active-gameboard" width="400" height="800">
+			
+         	  </canvas>
+	    </div>
+	
+		  <div class="label" id="level-label">000</div>
+		
+		<!--right-->
     	    <aside class="queue" id="next-queue">
-		<div class="label" id="next-label">NEXT</div>
+	    	  <div class="label" id="next-label">NEXT</div> 
+		  <div class="grid" id="hold-grid"></div>
     	    </aside>
-        <!-- GAME STATS PANEL
+        <!-- GAME STATS PANEL .. TODO
         <aside class="game-stats">
             Score: <span id="score-stat">0</span>
             Time: <span id="time-stat">00:00:00</span>
@@ -59,5 +78,8 @@
         </aside>
     -->
  	</main>
+   
+   <script src="game.js"></script>
+   <script src="render.js"></script>
    </body>
 </html>
