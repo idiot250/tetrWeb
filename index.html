@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>[  tetrWeb  ]</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <!-- TOP HEADER NAVIGATION BAR
+        <header class="top-bar">
+            <div class="nav-logo">
+                <a href="https://idiot250.github.io/tetrWeb" class="nav-logo-link">
+                   <span class="logo-title">tetrWeb !!</span>
+                </a>
+            </div>
+           <nav class="nav-links">
+                <a href="https://example.com" class="nav-link-item">nav1</a>
+                <a href="https://example.com" class="nav-link-item">nav2</a>
+                <a href="https://example.com" class="nav-link-item">nav3</a>
+                <a href="https://example.com" class="nav-link-item">nav4</a>
+           </nav>
+        </header>
+    -->
+
+
+        <!--
+            v0.0.1 PoC
+            2026 10 29
+        -->
+
+        <main class="game-container">
+            <section class="queue" id="hold-queue">
+                <div class="queue" id="hold-label">HOLD</div>
+                <div id="hold-grid"></div>
+            </section>
+
+            <canvas id="active-gameboard" width="400" height="800">
+
+                <div class="label-2" id="level-label">000</div>
+            </canvas>
+
+        <aside class="queue" id="next-queue">
+            <!--some sort of code for the handling and displaying of the next queue... idk...-->
+        </aside>
+        <!-- GAME STATS PANEL
+        <aside class="game-stats">
+            Score: <span id="score-stat">0</span>
+            Time: <span id="time-stat">00:00:00</span>
+            PPS: <span id="pps-stat">0</span>
+            Combo: <span id="combo-stat">0</span> how do i only make this appear when someone has an active combo...
+             TODO -- Advanced Stats
+                - TRT | tetris rate
+                - BRN | burn
+                - APM | actions/min
+                - KPP | keys/piece
+                - Finesse
+            
+        </aside>
+    -->
+    </main>
+    </body>
+</html>
